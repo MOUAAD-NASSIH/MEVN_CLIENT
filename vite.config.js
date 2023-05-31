@@ -11,7 +11,8 @@ export default defineConfig({
   plugins: [vue(), vuetify({ autoImport: true })],
   devServer: {
     port: 5000,
-    proxy: "http://localhost:5000",
+    proxy: "https://mevn-api-0hdw.onrender.com",
+    // proxy: "http://localhost:5000",
   },
   resolve: {
     alias: {

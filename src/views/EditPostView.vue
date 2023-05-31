@@ -10,8 +10,9 @@
               :width="316"
               aspect-ratio="16/9"
               cover
-              :src="'http://localhost:5000/' + post.image"
+              :src="'https://mevn-api-0hdw.onrender.com/' + post.image"
             ></v-img>
+            <!-- :src="'http://localhost:5000/' + post.image" -->
           </div>
           <v-form
             ref="form"

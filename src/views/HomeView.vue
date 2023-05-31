@@ -13,8 +13,9 @@
         <v-card class="pa-1" :to="{ name: 'post', params: { id: post._id } }">
           <v-img
             height="250"
-            :src="'http://localhost:5000/' + post.image"
+            :src="'https://mevn-api-0hdw.onrender.com/' + post.image"
           ></v-img>
+          <!-- :src="'http://localhost:5000/' + post.image" -->
           <v-btn class="ml-4 mt-3" size="small" variant="outlined" color="blue">
             {{ post.category }}
           </v-btn>

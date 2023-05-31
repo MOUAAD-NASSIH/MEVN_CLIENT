@@ -1,7 +1,8 @@
 import { defineStore } from "pinia";
 import { ref, computed } from "vue";
 import axios from "axios";
-const api = "http://localhost:5000/api/posts";
+// const api = "http://localhost:5000/api/posts";
+const api = "https://mevn-api-0hdw.onrender.com/api/posts";
 
 export const usePostsStore = defineStore("posts", () => {
   const posts = ref([]);
