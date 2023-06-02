@@ -79,8 +79,10 @@ const submitForm = async () => {
   formData.append("content", post.value.content);
   // console.log(Array.from(formData));
   if (form.value.validate()) {
-    const res = await addPost(formData);
-    router.push({ name: "home", query: { message: res.message } });
+    if (image.value) {
+      const res = await addPost(formData);
+      router.push({ name: "home", query: { message: res.message } });
+    }
   }
 };
 </script>
